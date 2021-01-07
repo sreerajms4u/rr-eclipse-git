@@ -9,12 +9,12 @@ public class AmazonLogin extends BaseClass{
 	public void LoginToAmazon()
 	{
 		
-//logger.info("Start Login!!");
+logger.info("Start Login!!");
 		
 		
 		
 		//Step 1 - Login to Amazon from Chrome Browser
-		//logger.info("Step 1 - Login to Amazon from Chrome Browser");
+		logger.info("Step 1 - Login to Amazon from Chrome Browser");
 		driver.findElement(By.xpath("//span[@id='nav-link-accountList-nav-line-1']")).click();
 		driver.findElement(By.xpath("//input[@id='ap_email']")).sendKeys(getKeyValue(TestingAttributes,"userName")); 
 		driver.findElement(By.xpath("//input[@id='continue']")).click();
@@ -30,7 +30,7 @@ public class AmazonLogin extends BaseClass{
 		
 		
 		//driver.findElement(By.xpath("//*[@id='nav-item-signout']/span']")).click();
-		//logger.info("Logout from Amazon");
+		logger.info("Logout from Amazon");
 		//driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
 		driver.quit();
 		

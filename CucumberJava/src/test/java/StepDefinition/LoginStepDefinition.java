@@ -23,7 +23,7 @@ public class LoginStepDefinition extends BaseClass
 	public void amazon_home_page() {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
-		//logger = Logger.getLogger(LoginStepDefinition.class.getName());
+		logger = Logger.getLogger(LoginStepDefinition.class.getName());
 		loadLog4j();
 		InitExcel();
 		
