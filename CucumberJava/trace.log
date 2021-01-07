@@ -1,1 +1,14 @@
-[main] INFO  StepDefinition.LoginStepDefinition  - Test Message
+INFO main StepDefinition.LoginStepDefinition -Start Login!!
+INFO main StepDefinition.LoginStepDefinition -Step 1 - Login to Amazon from Chrome Browser
+INFO main StepDefinition.LoginStepDefinition -Step 2 - Select category as ‘Electronics’ from the search Menu
+INFO main StepDefinition.LoginStepDefinition -Step 3 - Search for item (Dell laptop) with filter by memory, os,review and discount
+INFO main StepDefinition.LoginStepDefinition -Starting FilterAmazonProduct
+INFO main StepDefinition.LoginStepDefinition -Start Login!!
+INFO main StepDefinition.LoginStepDefinition -Step 1 - Login to Amazon from Chrome Browser
+INFO main StepDefinition.LoginStepDefinition -Step 2 - Select category as ‘Electronics’ from the search Menu
+INFO main StepDefinition.LoginStepDefinition -Step 3 - Search for item (Dell laptop) with filter by memory, os,review and discount
+INFO main StepDefinition.LoginStepDefinition -Starting FilterAmazonProduct
+INFO main StepDefinition.LoginStepDefinition -Start Login!!
+INFO main StepDefinition.LoginStepDefinition -Step 1 - Login to Amazon from Chrome Browser
+INFO main StepDefinition.LoginStepDefinition -Step 2 - Select category as ‘Electronics’ from the search Menu
+INFO main StepDefinition.LoginStepDefinition -Step 3 - Search for item (Dell laptop) with filter by memory, os,review and discount

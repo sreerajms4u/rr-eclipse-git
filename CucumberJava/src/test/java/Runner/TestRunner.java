@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
- features = "C:/Users/sreeraj.surendran/workspace/CucumberJava/src/test/java/Features"
+ features = "C:/Users/sreeraj.surendran/git/rr-eclipse-git/CucumberJava/src/test/java/Features/login.feature"
  ,glue={"StepDefinition"}
  )
 
