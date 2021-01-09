@@ -1,4 +1,4 @@
-package StepDefinition;
+package Common;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -12,7 +12,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 
-public class FromExcel 
+public class ExcelHandler 
 
 {
 

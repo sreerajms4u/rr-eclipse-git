@@ -1,70 +1,69 @@
 package StepDefinition;
 
-import org.openqa.selenium.chrome.ChromeDriver;
-import Common.AmazonLogin;
-import Common.BaseClass;
-import Common.LogDetails;
-import Common.ProductFilter;
-import Common.ProductSearch;
-
-import org.apache.log4j.Logger;
+import Common.UtilityClass;
+import Pages.LogDetails;
+import Pages.LoginPage;
+import Pages.ProductFilter;
+import Pages.ProductSearch;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class LoginStepDefinition extends BaseClass
+public class LoginStepDefinition extends UtilityClass
 {
 	
 	@Before
 	
-	@Given("Amazon land page")
-	public void amazon_home_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    //throw new io.cucumber.java.PendingException();
-		logger = Logger.getLogger(LoginStepDefinition.class.getName());
-		loadLog4j();
-		InitExcel();
-		
-		
-	    
+	@Given("^Open the browser and launch the application$")
+	public void open_browser_and_launch_application() {
+		SetTestingAttributes();
 	    driver.get("https://www.amazon.in/");
 	}
 	
-	@When("User in Login page")
-	public void User_in_login_page()
-	{
-	
-		AmazonLogin login = new AmazonLogin();
-		login.LoginToAmazon();
+	@When("^Login to Application$")
+	public void login_to_application()
+	{	
+		LoginPage login = new LoginPage(driver);
+		login.loginValidUser(getKeyValue(TestingAttributes,"userName"),getKeyValue(TestingAttributes,"password"));
 		
 	}
-	@Then("Search Product")
+	@Then("^Search Product$")
 	public void SearchProduct()
 	{
-		ProductSearch search = new ProductSearch();
-		search.SearchAmazonProduct();
+		String category = getKeyValue(TestingAttributes,"category");
+		String productCategory = getKeyValue(TestingAttributes,"productCategory");
+		String product = getKeyValue(TestingAttributes,"product");
+		String item = getKeyValue(TestingAttributes,"item");
+		
+		ProductSearch search = new ProductSearch(driver, logger);
+		search.SearchProductItem(category,productCategory,product,item);
 	}
 		
-	@Then ("Filter Product")
+	@Then ("^Filter Product$")
 	public void FilterProduct()
 	{
-		ProductFilter filter = new ProductFilter();
-		filter.FilterAmazonProduct();
+		String memoryValue = getKeyValue(TestingAttributes,"memory");
+		String osValue = getKeyValue(TestingAttributes,"os");
+		String discountValue = getKeyValue(TestingAttributes,"discount");
+		String reviewValue = getKeyValue(TestingAttributes,"review");
+		
+		ProductFilter filter = new ProductFilter(driver);
+		filter.FilterProduct(memoryValue,osValue,discountValue,reviewValue);
 		
 	}
-	@Then ("Log Product Description")
-	public void LogProductDescription()
+	@Then ("^Log Product Description$")
+	public void LogProductDescription() throws InterruptedException
 	{
-		LogDetails logdetail = new LogDetails();
+		LogDetails logdetail = new LogDetails(driver, logger);
 		logdetail.LogProductDetails();
 	}
-	@And ("Sign out")
+	@And ("^Sign out$")
 	public void Signout()
 	{
-		AmazonLogin login = new AmazonLogin();
-		login.LogOutFromAmazon();
+		LoginPage login = new LoginPage(driver);
+		login.LogOutFromApplication();
 	}
 			
 }

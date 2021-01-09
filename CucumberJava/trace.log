@@ -12,3 +12,54 @@ INFO main StepDefinition.LoginStepDefinition -Start Login!!
 INFO main StepDefinition.LoginStepDefinition -Step 1 - Login to Amazon from Chrome Browser
 INFO main StepDefinition.LoginStepDefinition -Step 2 - Select category as ‘Electronics’ from the search Menu
 INFO main StepDefinition.LoginStepDefinition -Step 3 - Search for item (Dell laptop) with filter by memory, os,review and discount
+INFO main StepDefinition.LoginStepDefinition -Start Login!!
+INFO main StepDefinition.LoginStepDefinition -Step 1 - Login to Amazon from Chrome Browser
+INFO main StepDefinition.LoginStepDefinition -Step 2 - Select category as ‘Electronics’ from the search Menu
+INFO main StepDefinition.LoginStepDefinition -Step 3 - Search for item (Dell laptop) with filter by memory, os,review and discount
+INFO main StepDefinition.LoginStepDefinition -Starting FilterAmazonProduct
+INFO main StepDefinition.LoginStepDefinition -Start Login!!
+INFO main StepDefinition.LoginStepDefinition -Step 1 - Login to Amazon from Chrome Browser
+INFO main StepDefinition.LoginStepDefinition -Step 2 - Select category as ‘Electronics’ from the search Menu
+INFO main StepDefinition.LoginStepDefinition -Step 3 - Search for item (Dell laptop) with filter by memory, os,review and discount
+INFO main StepDefinition.LoginStepDefinition -Starting FilterAmazonProduct
+INFO main StepDefinition.LoginStepDefinition -Ends FilterAmazonProduct
+INFO main StepDefinition.LoginStepDefinition -size= 0
+INFO main StepDefinition.LoginStepDefinition -Ended!!
+INFO main Common.AppLogger -Starting SearchProductItem
+INFO main Common.AppLogger -Error: no such element: Unable to locate element: {"method":"css selector","selector":"#searchDropdownBox"}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'LAP-5168', ip: '172.27.80.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\SREERA~1.SUR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60932}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c2d512c0d3d41f9dfcd970f9552f4a9d
+*** Element info: {Using=id, value=searchDropdownBox}
+INFO main Common.AppLogger -Starting SearchProductItem
+INFO main Common.AppLogger -Error: no such element: Unable to locate element: {"method":"css selector","selector":"#searchDropdownBox"}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'LAP-5168', ip: '172.27.80.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\SREERA~1.SUR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59289}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: af730d49644a51bb943e19d81bceba0a
+*** Element info: {Using=id, value=searchDropdownBox}
+INFO main Common.AppLogger -Starting SearchProductItem
+INFO main Common.AppLogger -Starting SearchProductItem
+INFO main Common.AppLogger -Starting SearchProductItem
+INFO main Common.AppLogger -Ended!!
+INFO main Common.AppLogger -Starting SearchProductItem
+INFO main Common.AppLogger -Ended!!
+INFO main Common.AppLogger -Starting SearchProductItem
+INFO main Common.AppLogger -Ended!!
+INFO main Common.AppLogger -Starting SearchProductItem
+INFO main Common.AppLogger -Ended!!
+INFO main Common.AppLogger -Starting SearchProductItem
+INFO main Common.AppLogger -Ended!!
+INFO main Common.AppLogger -Starting SearchProductItem
+INFO main Common.AppLogger -Ended!!
+INFO main Common.AppLogger -Starting SearchProductItem
+INFO main Common.AppLogger -Ended!!
+INFO main Common.AppLogger -Starting SearchProductItem
+INFO main Common.AppLogger -Ended!!
